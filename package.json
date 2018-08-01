@@ -1,0 +1,61 @@
+{
+  "name": "xzxc",
+  "version": "1.0.0",
+  "description": "xzxc",
+  "private": true,
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "egg": "^2.2.1",
+    "egg-cors": "^2.0.0",
+    "egg-mysql": "^3.0.0",
+    "egg-passport": "^2.0.1",
+    "egg-passport-github": "^1.0.0",
+    "egg-scripts": "^2.6.0",
+    "egg-ua": "^1.0.0",
+    "egg-view-nunjucks": "^2.2.0",
+    "formidable": "^1.2.1",
+    "formstream": "^1.1.0",
+    "moment": "^2.22.2",
+    "my-vue-editor": "^1.0.11",
+    "passport-local": "^1.0.0",
+    "qiniu": "^7.2.1",
+    "start": "^5.1.0",
+    "stream-wormhole": "^1.0.4",
+    "vue-cookies": "^1.5.6",
+    "vue-quill-editor": "^3.0.6"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "egg-bin": "^4.3.5",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.14.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^6.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "start": " egg-scripts start --port=80 --daemon --title=egg-server-xzxc",
+    "stop": "egg-scripts stop --title=egg-server-xzxc",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "xzxc",
+  "license": "MIT"
+}
